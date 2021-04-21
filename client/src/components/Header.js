@@ -13,21 +13,22 @@ class Header extends React.Component {
     render () {
         return (
             <Router>
-            <div className="hero_area">
+                <div class="hero_area">
     {/* <!-- NAVBAR
     ================================================== --> */}
    
-    <nav className="navbar navbar-expand-lg navbar-light">
-      <div className="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
         {/* <!-- Brand --> */}
         <Link to="/">
-        <a className="navbar-brand" href="index.html">
-          <img src="images/logo2.svg" className="navbar-brand-img" alt="..." />
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo2.svg" class="navbar-brand-img" alt="..." />
         </a>
         </Link>
+
         {/* <!-- Toggler --> */}
         <button
-          className="navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarCollapse"
@@ -35,14 +36,14 @@ class Header extends React.Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         {/* <!-- Collapse --> */}
-        <div className="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
           {/* <!-- Toggler --> */}
           <button
-            className="navbar-toggler"
+            class="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarCollapse"
@@ -50,15 +51,15 @@ class Header extends React.Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i className="fas fa-times"></i>
+            <i class="fas fa-times"></i>
           </button>
 
           {/* <!-- Navigation --> */}
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-            <Link to="/">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <Link to="/">
               <a
-                className="nav-link"
+                class="nav-link"
                 id=""
                 data-toggle=""
                 href="index.html"
@@ -70,9 +71,9 @@ class Header extends React.Component {
               </Link>
             </li>
             
-            <li className="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle"
                 id="navbarcompany"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -80,62 +81,62 @@ class Header extends React.Component {
               >
                 Company
               </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarcompany">
-                <a className="list-group-item" href="about.html">
-                  <div className="icon icon-sm text-theme">
-                    <i className="fas fa-info-circle" style={{fontSize: '30px'}}></i>
+              <ul class="dropdown-menu" aria-labelledby="navbarcompany">
+                <a class="list-group-item" href="about.html">
+                  <div class="icon icon-sm text-theme">
+                    <i class="fas fa-info-circle" style={{fontSize: '30px'}}></i>
                   </div>
-                  <div className="ml-4">
-                    <h6 className="font-weight-bold text-uppercase text-theme mb-0">
+                  <div class="ml-4">
+                    <h6 class="font-weight-bold text-uppercase text-theme mb-0">
                       About
                     </h6>
                   </div>
                 </a>
-                <a className="list-group-item" href="team.html">
-                  <div className="icon icon-sm text-theme">
-                    <i className="fas fa-users" style={{fontSize: '30px'}}></i>
+                <a class="list-group-item" href="team.html">
+                  <div class="icon icon-sm text-theme">
+                    <i class="fas fa-users" style={{fontSize: '30px'}}></i>
                   </div>
-                  <div className="ml-4">
-                    <h6 className="font-weight-bold text-uppercase text-theme mb-0">
+                  <div class="ml-4">
+                    <h6 class="font-weight-bold text-uppercase text-theme mb-0">
                       Team
                     </h6>
                   </div>
                 </a>
-                <a className="list-group-item" href="training.html">
-                  <div className="icon icon-sm text-theme">
-                    <i className="fas fa-laptop" style={{fontSize: '30px'}}></i>
+                <a class="list-group-item" href="training.html">
+                  <div class="icon icon-sm text-theme">
+                    <i class="fas fa-laptop" style={{fontSize: '30px'}}></i>
                   </div>
-                  <div className="ml-4">
-                    <h6 className="font-weight-bold text-uppercase text-theme mb-0">
+                  <div class="ml-4">
+                    <h6 class="font-weight-bold text-uppercase text-theme mb-0">
                       Training
                     </h6>
                   </div>
                 </a>
-                <a className="list-group-item" href="career.html">
-                  <div className="icon icon-sm text-theme">
-                    <i className="fas fa-briefcase" style={{fontSize: '30px'}}></i>
+                <a class="list-group-item" href="career.html">
+                  <div class="icon icon-sm text-theme">
+                    <i class="fas fa-briefcase" style={{fontSize: '30px'}}></i>
                   </div>
-                  <div className="ml-4">
-                    <h6 className="font-weight-bold text-uppercase text-theme mb-0">
+                  <div class="ml-4">
+                    <h6 class="font-weight-bold text-uppercase text-theme mb-0">
                       Career
                     </h6>
                   </div>
                 </a>
-                <a className="list-group-item" href="testimonials.html">
-                  <div className="icon icon-sm text-theme">
-                    <i className="fas fa-comments" style={{fontSize: '30px'}}></i>
+                <a class="list-group-item" href="testimonials.html">
+                  <div class="icon icon-sm text-theme">
+                    <i class="fas fa-comments" style={{fontSize: '30px'}}></i>
                   </div>
-                  <div className="ml-4">
-                    <h6 className="font-weight-bold text-uppercase text-theme mb-0">
+                  <div class="ml-4">
+                    <h6 class="font-weight-bold text-uppercase text-theme mb-0">
                       Testimonials
                     </h6>
                   </div>
                 </a>
               </ul>
             </li>
-            <li className="nav-item">
+            <li class="nav-item">
               <a
-                className="nav-link"
+                class="nav-link"
                 id=""
                 data-toggle=""
                 href="portfolio.html"
@@ -145,9 +146,9 @@ class Header extends React.Component {
                 Portfolio
               </a>
             </li>
-            <li className="nav-item">
+            <li class="nav-item">
               <a
-                className="nav-link"
+                class="nav-link"
                 id=""
                 data-toggle=""
                 href="blog.html"
@@ -157,9 +158,9 @@ class Header extends React.Component {
                 Blog
               </a>
             </li>
-            <li className="nav-item">
+            <li class="nav-item">
               <a
-                className="nav-link"
+                class="nav-link"
                 id=""
                 data-toggle=""
                 href="services.html"
@@ -173,19 +174,21 @@ class Header extends React.Component {
           </ul>
 
           {/* <!-- Button --> */}
-          <Link to="/contact">
           <a
-            className="navbar-btn btn btn-sm btn-theme lift ml-auto"
+            class="navbar-btn btn btn-sm btn-theme lift ml-auto"
             href="contact.html"
           >
+            <Link to="/contact">
             Contact
+            </Link>
           </a>
-          </Link>
+          
+          
         </div>
       </div>
     </nav>
 
-    <div className="whatsapp">
+    <div class="whatsapp">
       <a href="https://api.whatsapp.com/send?phone=7000318920" target="_blank" style={{color: 'white !important'}}>
         <img src="images/whatsapp.png" alt="icon" />
       </a>
