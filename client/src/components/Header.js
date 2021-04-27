@@ -1,18 +1,9 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-import ContactForm from './Contact';
-import Home from './Home';
-import ContactResult from './Result';
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
     render () {
         return (
-            <Router>
                 <div class="hero_area">
     {/* <!-- NAVBAR
     ================================================== --> */}
@@ -57,32 +48,33 @@ class Header extends React.Component {
           {/* <!-- Navigation --> */}
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <Link to="/">
-              <a
+              <Link to="/" aria-haspopup="true"
+              
                 class="nav-link"
                 id=""
                 data-toggle=""
-                href="index.html"
-                aria-haspopup="true"
+                
                 aria-expanded="false"
               >
                 Home
-              </a>
+              
               </Link>
             </li>
             
             <li class="nav-item dropdown">
-              <a
+              <Link
                 class="nav-link dropdown-toggle"
                 id="navbarcompany"
+                href="..."
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 Company
-              </a>
+              </Link>
               <ul class="dropdown-menu" aria-labelledby="navbarcompany">
-                <a class="list-group-item" href="about.html">
+              <Link to="/about"
+                 class="list-group-item" href="...">
                   <div class="icon icon-sm text-theme">
                     <i class="fas fa-info-circle" style={{fontSize: '30px'}}></i>
                   </div>
@@ -91,8 +83,10 @@ class Header extends React.Component {
                       About
                     </h6>
                   </div>
-                </a>
-                <a class="list-group-item" href="team.html">
+                
+                </Link>
+                <Link to="/team"
+                 class="list-group-item" href="team.html">
                   <div class="icon icon-sm text-theme">
                     <i class="fas fa-users" style={{fontSize: '30px'}}></i>
                   </div>
@@ -101,8 +95,10 @@ class Header extends React.Component {
                       Team
                     </h6>
                   </div>
-                </a>
-                <a class="list-group-item" href="training.html">
+                
+                </Link>
+                <Link to="/training"
+                 class="list-group-item" href="training.html">
                   <div class="icon icon-sm text-theme">
                     <i class="fas fa-laptop" style={{fontSize: '30px'}}></i>
                   </div>
@@ -111,8 +107,10 @@ class Header extends React.Component {
                       Training
                     </h6>
                   </div>
-                </a>
-                <a class="list-group-item" href="career.html">
+                
+                </Link>
+                <Link to="/carrer"
+                 class="list-group-item" href="career.html">
                   <div class="icon icon-sm text-theme">
                     <i class="fas fa-briefcase" style={{fontSize: '30px'}}></i>
                   </div>
@@ -121,8 +119,10 @@ class Header extends React.Component {
                       Career
                     </h6>
                   </div>
-                </a>
-                <a class="list-group-item" href="testimonials.html">
+                
+                </Link>
+                <Link to="/testimonial"
+                 class="list-group-item" href="testimonials.html">
                   <div class="icon icon-sm text-theme">
                     <i class="fas fa-comments" style={{fontSize: '30px'}}></i>
                   </div>
@@ -131,11 +131,13 @@ class Header extends React.Component {
                       Testimonials
                     </h6>
                   </div>
-                </a>
+                
+                </Link>
               </ul>
             </li>
             <li class="nav-item">
-              <a
+            <Link to="/portfolio"
+              
                 class="nav-link"
                 id=""
                 data-toggle=""
@@ -144,10 +146,11 @@ class Header extends React.Component {
                 aria-expanded="false"
               >
                 Portfolio
-              </a>
+              
+              </Link>
             </li>
             <li class="nav-item">
-              <a
+            <Link to="/blog"
                 class="nav-link"
                 id=""
                 data-toggle=""
@@ -156,10 +159,11 @@ class Header extends React.Component {
                 aria-expanded="false"
               >
                 Blog
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a
+            <Link to="/services"
+              
                 class="nav-link"
                 id=""
                 data-toggle=""
@@ -168,20 +172,21 @@ class Header extends React.Component {
                 aria-expanded="false"
               >
                 Services
-              </a>
+              
+              </Link>
             </li>
             
           </ul>
 
           {/* <!-- Button --> */}
-          <a
-            class="navbar-btn btn btn-sm btn-theme lift ml-auto"
+          <Link to="/contact"
+            class="navbar-btn btn btn-sm btn-theme lift ml-auto "
             href="contact.html"
           >
-            <Link to="/contact">
+            
             Contact
             </Link>
-          </a>
+          
           
           
         </div>
@@ -189,17 +194,11 @@ class Header extends React.Component {
     </nav>
 
     <div class="whatsapp">
-      <a href="https://api.whatsapp.com/send?phone=7000318920" target="_blank" style={{color: 'white !important'}}>
+      <a href="https://api.whatsapp.com/send?phone=7000318920" target="_blank" rel="noreferrer" style={{color: 'white !important'}}>
         <img src="images/whatsapp.png" alt="icon" />
       </a>
     </div>
     </div>
-    <Switch>
-        <Route path="/contact"><ContactForm /></Route>
-        <Route path="/result"><ContactResult /></Route>
-        <Route path="/"><Home /></Route>
-    </Switch>
-    </Router>
         );
     }
 }

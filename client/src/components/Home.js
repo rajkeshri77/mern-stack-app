@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import TestimonialSlider from './TestimonialSlider';
 
 
 class Home extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
     render () {
         return (
             <div>
@@ -42,9 +47,11 @@ class Home extends React.Component {
                       <p>
                         Make the proper look On the Web With Our coming up Designing Solutions.
                       </p>
-                      <a href="">
+                      <Link to="/contact" style={{display: 'hidden'}}>
+                      <button className="button">
                         Contact Us
-                      </a>
+                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -71,9 +78,11 @@ class Home extends React.Component {
                       <p>
                         We develop your ideas into consummated dreams.
                       </p>
-                      <a href="">
+                      <Link to="/contact" style={{display: 'hidden'}}>
+                      <button className="button">
                         Contact Us
-                      </a>
+                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -100,9 +109,11 @@ class Home extends React.Component {
                       <p>
                         INetwork Hub is a content writing agency offering content development services.
                       </p>
-                      <a href="">
+                      <Link to="/contact" style={{display: 'hidden'}}>
+                      <button className="button">
                         Contact Us
-                      </a>
+                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -191,11 +202,13 @@ class Home extends React.Component {
           </div>
         </div>
       </div>
+      
       <div className="btn-box">
-        <a href="services.html">
+      <Link to="/services">
           View All
-        </a>
+          </Link>
       </div>
+      
     </div>
   </section>
 
@@ -211,40 +224,40 @@ class Home extends React.Component {
       </div>
       <div className="portfolio_container py-10">
         <div className="box-1">
-          <a href="portfolio.html">
+          <Link to="/portfolio">
           <div className="img-box">
             <img src="images/upcoming.jpg" data-filter=".upcoming" alt="Upcoming" />
             <div className="btn-box">
              <h2 className="text-center">Websites</h2>
             </div>
           </div>
-        </a>
-          <a href="portfolio.html">
+          </Link>
+          <Link to="/portfolio">
             <div className="img-box">
               <img src="images/live.jpg" alt="Live" />
               <div className="btn-box">
                 <h2>Upcoming Websites</h2>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="box-2">
-          <a href="portfolio.html">
+        <Link to="/portfolio">
             <div className="img-box b-3">
               <img src="images/graphic.jpg" alt="Graphics" width="120px" height="120px" />
               <div className="btn-box">
                 <h2>Graphics</h2>
               </div>
             </div>
-          </a>
-          <a href="portfolio.html">
+          </Link>
+          <Link to="/portfolio">
             <div className="img-box b-4">
               <img src="images/logos.jpg" alt="Logos" />
               <div className="btn-box">
                 <h2>LOGOS</h2>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
@@ -397,9 +410,9 @@ class Home extends React.Component {
           </div>
           <div className="col-md-4 offset-md-1">
             <div className="btn-box">
-              <a href="contact.html">
+            <Link to="/contact">
                 Let’s talk
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -526,9 +539,9 @@ class Home extends React.Component {
          
         </div>
           <div className="btn-box pt-10">
-            <a href="team.html">
+          <Link to="/team">
               View All
-            </a>
+            </Link>
           </div>
       </div>
     </section>
@@ -552,9 +565,9 @@ class Home extends React.Component {
           <div className="col-12 col-md-auto ">
 
             {/* <!-- Button --> */}
-            <a href="blog.html" className="btn btn-sm btn-outline-yellow ">
+            <Link to="/blog" className="btn btn-sm btn-outline-yellow ">
               View all
-            </a>
+            </Link>
 
           </div>
         </div>{/*  <!-- / .row --> */}
@@ -565,7 +578,7 @@ class Home extends React.Component {
             <div className="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
               {/* <!-- Image --> */}
-              <a className="card-img-top" href="blog-single-1.html">
+              <Link to="/blog" className="card-img-top" >
 
                 {/* <!-- Image --> */}
                 <img src="images/Beginner-guide-to-creating-a-business-website-4.jpg" alt="..." className="card-img-top" />
@@ -577,10 +590,10 @@ class Home extends React.Component {
                   </div>
                 </div>
 
-              </a>
+              </Link>
 
               {/* <!-- Body --> */}
-              <a className="card-body" href="blog-single-1.html">
+              <Link to="/blog" className="card-body" >
 
                 {/* <!-- Heading --> */}
                 <h3>
@@ -592,10 +605,10 @@ class Home extends React.Component {
                   Living in the digital world, a website is crucial for any business.
                 </p>
 
-              </a>
+              </Link>
 
               {/* <!-- Meta --> */}
-              <a className="card-meta mt-auto" href="blog-single-1.html">
+              <Link to="/blog" className="card-meta mt-auto" >
 
                 {/* <!-- Divider --> */}
                 <hr className="card-meta-divider" />
@@ -615,7 +628,7 @@ class Home extends React.Component {
                   <time datetime="2020-12-15">Jan 12</time>
                 </p>
 
-              </a>
+              </Link>
 
             </div>
 
@@ -626,7 +639,7 @@ class Home extends React.Component {
             <div className="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
 
               {/* <!-- Image --> */}
-              <a className="card-img-top" href="blog-single-2.html">
+              <Link to="/blog" className="card-img-top" >
 
                 {/* <!-- Image --> */}
                 <img src="images/stat.jpg" alt="..." className="card-img-top" />
@@ -638,10 +651,10 @@ class Home extends React.Component {
                   </div>
                 </div>
 
-              </a>
+              </Link>
 
               {/* <!-- Body --> */}
-              <a className="card-body" href="blog-single-2.html">
+              <Link to="/blog" className="card-body" >
 
                 {/* <!-- Heading --> */}
                 <h3>
@@ -653,10 +666,10 @@ class Home extends React.Component {
                   Websites are separated into two different types: static and dynamic.
                 </p>
 
-              </a>
+              </Link>
 
               {/* <!-- Meta --> */}
-              <a className="card-meta mt-auto" href="blog-single-2.html">
+              <Link to="/blog" className="card-meta mt-auto" >
 
                 {/* <!-- Divider --> */}
                 <hr className="card-meta-divider" />
@@ -676,7 +689,7 @@ class Home extends React.Component {
                   <time datetime="2020-12-15">Feb 07</time>
                 </p>
 
-              </a>
+              </Link>
 
             </div>
 
@@ -687,7 +700,7 @@ class Home extends React.Component {
             <div className="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
 
               {/* <!-- Image --> */}
-              <a className="card-img-top" href="blog-single-3.html">
+              <Link to="/blog" className="card-img-top" >
 
                 {/* <!-- Image --> */}
                 <img src="images/good-website-security-plan.jpg" alt="..." className="card-img-top" />
@@ -699,10 +712,10 @@ class Home extends React.Component {
                   </div>
                 </div>
 
-              </a>
+              </Link>
 
               {/* <!-- Body --> */}
-              <a className="card-body" href="blog-single-3.html">
+              <Link to="/blog" className="card-body" >
 
                 {/* <!-- Heading --> */}
                 <h3>
@@ -714,10 +727,10 @@ class Home extends React.Component {
                   Website security is important because nobody wants to have a hacked website.
                 </p>
 
-              </a>
+              </Link>
 
               {/* <!-- Meta --> */}
-              <a className="card-meta mt-auto" href="blog-single-3.html">
+              <Link to="/blog" className="card-meta mt-auto" >
 
                 {/* <!-- Divider --> */}
                 <hr className="card-meta-divider" />
@@ -737,7 +750,7 @@ class Home extends React.Component {
                   <time datetime="2020-12-15">Mar 05</time>
                 </p>
 
-              </a>
+              </Link>
 
             </div>
 
@@ -748,131 +761,8 @@ class Home extends React.Component {
       <br /><br />
     </section>
 
-    <section className="pt-8 pt-md-12 mb-10 testimonial bg-white">
-      <div className="row justify-content-center">
-        <div className="col-12 col-md-10 col-lg-8 text-center">
-
-          {/* <!-- Heading --> */}
-          <h2>
-            What our customers says 
-          </h2>
-
-          {/* <!-- Text --> */}
-          <p className="font-size-lg text-muted mb-7 mb-md-9">
-            
-          </p>
-
-        </div>
-      </div>
-      <div className="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
-        <div className="carousel-cell client_section" >
-          <div className="box">
-            <div className="client_id">
-              <div className="name">
-                <h4>
-                  Ms. Ayushi<br />
-                  Sharma
-                </h4>
-              </div>
-              <div className="img-box">
-                <img src="images/avatar-female.png" alt="Ayushi" />
-              </div>
-            </div>
-            <div className="detail-box">
-              <p>
-                "INetwork Hub has done the best to uplift my startup, they made my startup alive, only because of their team, many writers and authors get to know about us! A huge thanks to INetwork Hub and its team, for making my dream bloom and taking every possible step to help me reach more viewers! Their creativity is at par, the changes which they make accordingly has its own excellence, and they have always given me a little extra, as far as my requirements were concerned, so yeah, I would say, that INetwork Hub helped to create the best icing on my cake, metaphorically! Thank you INetwork Hub and its' team, much love❤️"
-              </p>
-              <img src="images/quote.png" alt="image" />
-            </div>
-          </div>
-        </div>
-        <div className="carousel-cell client_section" >
-          <div className="box">
-            <div className="client_id">
-              <div className="name">
-                <h4>
-                  Mr. Yousuf<br />
-                  Ali Haqqani
-                </h4>
-              </div>
-              <div className="img-box">
-                <img src="images/avatar-male.png" alt="Yousuf" />
-              </div>
-            </div>
-            <div className="detail-box">
-              <p>
-                "To excel in showbiz one needs excellent projection. When we thought of our production's website, we were very sure to have a great-glam interface. INetwork Hub not only provided us that interface but they designed our website with such a creative way that it platters all our creations on the computer screen. Getting a great response from peer and clients. Thank you INetwork Hub for designing a dream website for us."
-              </p>
-              <img src="images/quote.png" alt="image" />
-            </div>
-          </div>
-        </div>
-        <div className="carousel-cell client_section" >
-          <div className="box">
-            <div className="client_id">
-              <div className="name">
-                <h4>
-                  Mr. Mahendra<br />
-                  Keshri
-                </h4>
-              </div>
-              <div className="img-box">
-                <img src="images/avatar-male.png" alt="Mahendra" />
-              </div>
-            </div>
-            <div className="detail-box">
-              <p>
-                "I have had the opportunity to avail the services of INetwork Hub to develop my Website for my Business. I found them going above and beyond in providing their Services to me. INetwork Hub Project Manager Sauhard Mishra is exceptional. His patience, professionalism, duty of care towards his clients - are highly praise-worthy and I couldn't have done it without Sauhard. I would want to recommend Sauhard Mishra of the exceptional INetwork Hub Team to everyone for his diligent performance, customer service and above all - their reliability. Thank you INetwork Hub Team."
-              </p>
-              <img src="images/quote.png" alt="image" />
-            </div>
-          </div>
-        </div>
-        <div className="carousel-cell client_section" >
-          <div className="box">
-            <div className="client_id">
-              <div className="name">
-                <h4>
-                  Mr. Krishna<br />
-                  Kant
-                </h4>
-              </div>
-              <div className="img-box">
-                <img src="images/avatar-male.png" alt="Krishna" />
-              </div>
-            </div>
-            <div className="detail-box">
-              <p>
-                "Hey INetwork Hub Team, Thanks for the work you have done for us, it looks fantastic! I do really appreciate it. Many thanks for a great website, we are extremely pleased with the result. Finally, I would like to say thanks for a great job and I am over the moon with the finished work I would recommend you to Everyone."
-              </p>
-              <img src="images/quote.png" alt="image" />
-            </div>
-          </div>
-        </div>
-        <div className="carousel-cell client_section" >
-          <div className="box">
-            <div className="client_id">
-              <div className="name">
-                <h4>
-                  Mr. Chintan<br />
-                  Maganlal Kakkad
-                </h4>
-              </div>
-              <div className="img-box">
-                <img src="images/avatar-male.png" alt="Chintan" />
-              </div>
-            </div>
-            <div className="detail-box">
-              <p>
-                "When it comes to creating professional, attractive, and effective websites, there is no company that can surpass INetwork Hub.  Thanks to their talent, our site has taken off in the search engines like a rocket.  In this day and age, it is impossible to get ahead as a business without the support of gurus like INetwork Hub standing behind you. The attention is fabulous and the staff is superb.  In a matter of days, I had a tremendous proposal, above and beyond our expectations.  We could not have picked a better team of professionals to represent us.  They are and will remain my "web guys" in the future to come."
-              </p>
-              <img src="images/quote.png" alt="image" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
+    <br />
+          <TestimonialSlider></TestimonialSlider>
     
             </div>
         );

@@ -56,6 +56,10 @@ onSubmit(e) {
         this.setState({ name: '', email: '', phone: '', message: '' })
     }
 
+    componentDidMount() {
+      window.scrollTo(0, 0);
+  }
+
         render() {
          return (
           <div>
@@ -73,7 +77,7 @@ onSubmit(e) {
         <div className="col-lg-8 col-md-7 px-0">
           <div className="map_container">
             <div className="map-responsive">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.628473620782!2d88.37374701427196!3d22.48059164200845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0271319630fe67%3A0xbe51bef1a9d6b796!2sINetwork%20Hub!5e0!3m2!1sen!2sin!4v1614963238030!5m2!1sen!2sin" width="600" height="300" frameborder="0" style={{border:'0', width: '100%', height:'100%'}} allowfullscreen></iframe>
+              <iframe title="Office Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.628473620782!2d88.37374701427196!3d22.48059164200845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0271319630fe67%3A0xbe51bef1a9d6b796!2sINetwork%20Hub!5e0!3m2!1sen!2sin!4v1614963238030!5m2!1sen!2sin" width="600" height="300" frameborder="0" style={{border:'0', width: '100%', height:'100%'}} allowfullscreen></iframe>
             </div>
           </div>
         </div>

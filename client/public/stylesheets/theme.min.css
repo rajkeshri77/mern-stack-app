@@ -112,7 +112,7 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #335eea;
+  
   text-decoration: none;
   background-color: transparent;
   font-family: "Poppins", sans-serif;
@@ -4644,12 +4644,7 @@ input[type="submit"].btn-block {
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(22, 28, 45, 0.3);
 }
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: #335eea;
-}
+
 .navbar-light .navbar-toggler {
   color: #506690;
   border-color: transparent;
