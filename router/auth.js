@@ -4,7 +4,7 @@ const Carrer = require('../model/userSchema');
 const router = express.Router();
 const fileUpload = require('express-fileupload');
 const multer = require("multer");
-var upload = multer({ dest: './client/public/uploads/' })
+var upload = multer({ dest: '../client/public/uploads/' })
 
 router.post('/contact', async (req, res) => {
 
@@ -38,7 +38,7 @@ router.post('/carrer', upload.single('file'), async (req, res) => {
     }
 
     try {
-        const user = new Contact({name, email, phone, file});
+        const user = new Carrer({name, email, phone, file});
         
         await user.save();
         
